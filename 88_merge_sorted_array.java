@@ -1,4 +1,9 @@
 class Solution {
+    public static void main(String[] args) {
+        int [] nums1={1,2,3,4,5};
+        int [] nums2={5,6,7,8};
+
+    }
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p1 = m - 1, p2 = n - 1, p = m + n - 1;
         while (p1 >= 0 && p2 >= 0) {
@@ -16,5 +21,6 @@ class Solution {
             p2--;
             p--;
         }
+        System.err.println(nums1);
     }
 }
