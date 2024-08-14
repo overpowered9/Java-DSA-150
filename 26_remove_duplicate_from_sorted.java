@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
@@ -8,6 +10,8 @@ class Solution {
                 nums[i] = nums[j];
             }
         }
+        System.out.println(Arrays.toString(nums));
         return i + 1;
+        
     }
 }
